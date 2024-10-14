@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>招聘信息推荐网站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">招聘信息</div>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="upload.html">上传简历</a></li>
+                <li><a href="recommendations.html">我的推荐</a></li>
+                <li><a href="login.html">登录/注册</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-bar">
+            <input type="text" placeholder="搜索职位、公司或关键词">
+            <button>搜索</button>
+        </section>
+
+        <section class="job-list">
+            <h2>近期招聘信息</h2>
+            <ul id="job-listings">
+                <!-- 招聘信息将通过JavaScript动态加载 -->
+            </ul>
+            <div class="pagination">
+                <button id="prev-page">上一页</button>
+                <span id="page-number">1</span>
+                <button id="next-page">下一页</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 招聘网. 版权所有.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
